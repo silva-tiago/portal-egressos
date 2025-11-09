@@ -1,0 +1,143 @@
+:root {
+    --brand: #0b6fa9;
+    --accent: #1abc9c;
+    --bg: #f8fbfc;
+    --text: #1b2838;
+    --gap: 12px;
+    --radius: 10px;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.4;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+}
+
+.skip-link:focus {
+    left: 8px;
+    top: 8px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 6px;
+    z-index: 100;
+}
+
+header {
+    background: var(--brand);
+    color: #fff;
+    padding: 18px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem
+}
+
+header p {
+    margin: 6px 0 0
+}
+
+header .controls {
+    margin-top: 10px
+}
+
+header button {
+    margin: 0 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 14px;
+    background: #fff;
+    border-bottom: 1px solid #e6eef2;
+}
+
+nav button {
+    flex: 1 1 200px;
+    min-width: 150px;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav button:focus {
+    outline: 3px solid #0b6fa9;
+}
+
+main {
+    padding: 18px;
+    max-width: 980px;
+    margin: 0 auto
+}
+
+section.card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgba(20, 30, 40, 0.06);
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin: 0 0 8px
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eef6f9;
+    margin-top: 8px;
+}
+
+.item strong {
+    display: block;
+    margin-bottom: 6px
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #e6eef2;
+    margin-top: 18px;
+    font-size: 0.95rem
+}
+
+/* mobile adjustments */
+@media(min-width:900px) {
+    header h1 {
+        font-size: 1.8rem
+    }
+
+    nav button {
+        flex: 0 1 160px
+    }
+}

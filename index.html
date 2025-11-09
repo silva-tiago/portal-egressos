@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portal do Egresso</title>
+    <link rel="stylesheet" href="style.css"> <!-- PapaParse para ler CSV robustamente -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body> <a class="skip-link" href="#menu">Ir direto ao menu</a>
+    <header>
+        <h1>Portal do Egresso</h1>
+        <p id="subtitle">Informações e contatos — sem cadastro</p>
+        <div class="controls"> <button id="btn-ouvir" aria-label="Ouvir conteúdo">🔊 Ouvir</button> <button
+                id="btn-topo" aria-label="Voltar ao topo">↑ Topo</button> </div>
+    </header>
+    <nav id="menu" aria-label="Menu principal"> <button data-section="vagas">Vagas de Trabalho</button> <button
+            data-section="cursos">Cursos e Qualificação</button> <button data-section="saude">Apoio Psicológico e
+            Saúde</button> <button data-section="juridico">Apoio Jurídico</button> <button
+            data-section="direitos">Direitos do Egresso</button> <button data-section="ongs">Contato de ONGs</button>
+    </nav>
+    <main id="main">
+        <section id="painel" tabindex="-1">
+            <p>Escolha um item no menu para ver as informações.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Este site não coleta dados pessoais. Atualize os dados pela planilha Google Sheets.</p>
+    </footer>
+</body>
+
+</html>
